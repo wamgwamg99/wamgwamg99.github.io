@@ -3,7 +3,7 @@
 
 	<head>
 		
-<title>文章归档-Quiet</title>
+<title>markdown使用语法笔记-Quiet</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,8 +20,13 @@
 
 	<body>
 		
+<link rel="stylesheet" href="/css/page.css">
 
-<link rel="stylesheet" href="/css/archive.css">
+
+<link rel="stylesheet" href="/css/page_cente.css">
+
+
+<link rel="stylesheet" href="/css/atom-one-dark.css">
 
 
 <link rel="stylesheet" href="/css/header.css">
@@ -46,13 +51,13 @@
 								
 									
 						
-							<li class="select">
-								<a href="/archives">
-									ARCHIVE
-								</a>
-								<span class="dot"></span>
-							</li>
-							
+								<li>
+									<a href="/archives">
+										ARCHIVE
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -234,38 +239,119 @@
 		<script>
 			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
 		</script>
-
-<div class="header-bg">
+<div class="header-bg ">
     <div class="bg-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgicon-remixicon.svg" alt="Q">
-        </span>
-
-        <h2>居然用了 1 年一共才写了 1 篇文章!</h2>
+        <ul class="tag">
+            
+        </ul>
+        <h1>markdown使用语法笔记</h1>
+        <div class="article-info">
+            <div class="article-author">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                        <path fill="#12183A"
+                            d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                        </path>
+                    </g>
+                </svg>
+                
+                <span> <a href="">CHANGEQ</a></span>
+                <p>2021-03-02 11:41:47</p>
+            </div>
+        </div>
     </div>
 </div>
 <div class="article-content">
     <div id="article" class="content">
-        
-        <p>
-            2021
-        </p>
-        
-        <a href="/2021/03/02/我的第一篇博客/">
-            <span>markdown使用语法笔记</span>
-            <time>03-02</time>
-        </a>
-        
-        
+        <h1 id="markdown-语法教程"><a href="#markdown-语法教程" class="headerlink" title="markdown 语法教程"></a>markdown 语法教程</h1><blockquote>
+<p>By henry</p>
+</blockquote>
+<h1 id="1-井号（-）作为段落格式的语法"><a href="#1-井号（-）作为段落格式的语法" class="headerlink" title="1. 井号（#）作为段落格式的语法"></a>1. 井号（#）作为段落格式的语法</h1><ul>
+<li>1个井号为H1标题，2个为H2标题，以此类推</li>
+</ul>
+<h1 id="2-插入图片"><a href="#2-插入图片" class="headerlink" title="2.插入图片"></a>2.插入图片</h1><ul>
+<li>使用<code>!</code>开头中间加入[在这里键入图片描述](在这里输入网址）</li>
+</ul>
+<p>范例：</p>
+<p><img src="https://i.loli.net/2021/03/02/8fcRMA9rSBpNO4U.jpg" alt="合影"></p>
+<blockquote>
+<p>上面就是使用感叹号括号组合形成的图片。</p>
+</blockquote>
+<h1 id="3-插入表格"><a href="#3-插入表格" class="headerlink" title="3.插入表格"></a>3.插入表格</h1><ul>
+<li>使用<code>|</code>竖线编辑表格使用<code>:</code>调整左右对齐</li>
+</ul>
+<p>范例：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>第一列</th>
+<th>第二列</th>
+<th>第三列</th>
+<th>第四列</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第一行</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>第二行</td>
+<td>content 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>第三行</td>
+<td>line3</td>
+<td>column 3</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>可以使用网络上各种<a target="_blank" rel="noopener" href="https://tool.lu/tables/">在线生成表格工具</a>完成制作</p>
+</blockquote>
+<h1 id="4-使用脚注"><a href="#4-使用脚注" class="headerlink" title="4.使用脚注"></a>4.使用脚注</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：[<span class="string">文字</span>](<span class="link">链接</span>)</span><br><span class="line">脚注：[<span class="string">文字</span>](<span class="link">脚注解释 &quot;脚注名字&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><em>例如:</em></p>
+<p>本文参考文献来自斯波索宾参与创作的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%96%AF%E6%B3%A2%E7%B4%A2%E5%AE%BE%E5%92%8C%E5%A3%B0%E5%AD%A6" title="斯波索宾维基百科">斯波索宾和声学教程</a>，本书具有相当专业的讲解</p>
+
     </div>
 </div>
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 109;
+        width: 600px !important;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
 
-
-
-
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            width: 88%
+        }
+    }
+</style>
 <script>
-    $(function () { $('.article-content').addClass('content-move'); })
+    $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
 </script>
+<div class="Last-Next">
+    
+
+    
+</div>
 		
 <link rel="stylesheet" href="/css/food.css">
 
